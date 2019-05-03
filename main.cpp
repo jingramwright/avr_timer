@@ -18,6 +18,7 @@ VERSION HISTORY
   VERSION         DATE         AUTHOR                DESCRIPTION
   -------         ----         ------                -----------
   1.0             03/05/19     J. Ingram-Wright      Initial version
+  1.1             03/05/19     J. Ingram-Wright      Commentary update
 ------------------------------------------------------------------------------*/
 
 
@@ -25,10 +26,8 @@ VERSION HISTORY
 #include<avr/interrupt.h>
 
 #define BUILT_IN_LED PB5
-// Desired time between interrupts.
-#define TIMER_PERIOD 0.5
-// Overflow time with a 1024 prescaler.
-#define TIMER_RESOLUTION 6.4e-5
+#define TIMER_PERIOD 0.5 // Desired time between interrupts.
+#define TIMER_RESOLUTION 6.4e-5 // Overflow time with a 1024 prescaler.
 
 
 void initialiseGpio()
